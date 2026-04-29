@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-8">
               <div className="p-6 bg-gray-50 rounded-3xl border border-gray-100">
                 <p className="text-sm font-medium leading-relaxed">
-                  IPTVDeutschland hilft tausenden Kunden mit Premium-IPTV. Für schnellen Service, WhatsApp uns für eine Antwort innerhalb von 5 Minuten, ruf an <a href="tel:+447449708976" className="font-bold hover:underline" style={{ color: '#DD0000' }}>+44 7449 708976</a> oder schreib an <a href="mailto:info@iptvnederland.digital" className="font-bold hover:underline" style={{ color: '#DD0000' }}>info@iptvnederland.digital</a>.
+                  IPTVDeutschland hilft tausenden Kunden mit Premium-IPTV. Für schnellen Service, WhatsApp uns für eine Antwort innerhalb von 5 Minuten, ruf an <a href="tel:+447449708976" className="font-bold hover:underline" style={{ color: '#DD0000' }}>+44 7449 708976</a> oder schreib an <a href="mailto:info@iptvdeutsch.digital" className="font-bold hover:underline" style={{ color: '#DD0000' }}>info@iptvdeutsch.digital</a>.
                 </p>
               </div>
               
@@ -66,8 +66,12 @@ export const Footer: React.FC = () => {
 
         <div className="mt-12 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-sm flex items-center justify-center" style={{ backgroundColor: '#DD0000' }}>
-              <div className="w-4 h-4 bg-white rotate-45"></div>
+            <div className="w-9 h-9 rounded-[10px] overflow-hidden shadow-lg flex-shrink-0">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                <rect width="40" height="40" fill="#111111"/>
+                <rect width="40" height="13.4" y="13.3" fill="#DD0000"/>
+                <rect width="40" height="13.4" y="26.6" fill="#FFCE00"/>
+              </svg>
             </div>
             <span className="text-xl font-extrabold tracking-tighter">IPTVDeutschland</span>
           </div>
@@ -75,7 +79,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 md:gap-8 text-sm font-bold opacity-60">
             <a href="/algemene-voorwaarden" className="hover:opacity-100 transition-opacity">AGB</a>
             <a href="/privacybeleid" className="hover:opacity-100 transition-opacity">Datenschutz</a>
-            <a href="mailto:info@iptvnederland.digital" className="hover:opacity-100 transition-opacity">info@iptvnederland.digital</a>
+            <a href="mailto:info@iptvdeutsch.digital" className="hover:opacity-100 transition-opacity">info@iptvdeutsch.digital</a>
             <a href="tel:+447449708976" className="hover:opacity-100 transition-opacity">+44 7449 708976</a>
           </div>
           

@@ -219,28 +219,62 @@ export const PaymentMethods: React.FC = () => {
             Nutze deine Lieblingsapp
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {[
-              { name: 'IPTV Smarters Pro', desc: 'iOS · Android · Smart TV', img: '/assets/apps/iptv-smarters-pro.png' },
-              { name: 'IPTV Smarters', desc: 'iOS · Android · Smart TV', img: '/assets/apps/iptv-smarters.png' },
-              { name: 'TiviMate', desc: 'Android TV · Fire Stick', img: '/assets/apps/tivimate.png' },
-              { name: 'SE Smart IPTV', desc: 'iOS · Android · macOS', img: '/assets/apps/se-smart-iptv.png' },
-              { name: 'Smart IPTV', desc: 'Samsung · LG Smart TV', img: '/assets/apps/smart-iptv.png' },
-              { name: 'VLC', desc: 'Windows · Mac · Linux', img: '/assets/apps/vlc.png' },
-              { name: 'Kodi', desc: 'Alle Plattformen', img: '/assets/apps/kodi.png' },
-              { name: 'IBO Player Pro', desc: 'iOS · Android · Smart TV', img: '/assets/apps/iboplayer-pro.png' },
-              { name: 'Hot Player', desc: 'Android · Smart TV', img: '/assets/apps/hotplayer.png' },
-              { name: 'BOB Player', desc: 'Android · Smart TV', img: '/assets/apps/bob-player.png' },
-              { name: 'TV Online', desc: 'Android · Smart TV', img: '/assets/apps/tvonline1.png' },
-            ].map((app) => (
+            {([
+              {
+                name: 'IPTV Smarters Pro', desc: 'iOS · Android · Smart TV', bg: '#7C3AED',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5,3 19,12 5,21" fill="white" stroke="none"/><path d="M19 3l2 2-2 2M19 17l2 2-2 2" stroke="white" strokeWidth="1.5"/></svg>,
+              },
+              {
+                name: 'IPTV Smarters', desc: 'iOS · Android · Smart TV', bg: '#2563EB',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="13" rx="2" stroke="white"/><polygon points="10,9 16,12 10,15" fill="white" stroke="none"/></svg>,
+              },
+              {
+                name: 'TiviMate', desc: 'Android TV · Fire Stick', bg: '#059669',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="13" rx="2" stroke="white"/><path d="M8 21h8M12 17v4"/><path d="M8 11l3 3 5-5" stroke="white" strokeWidth="2.5"/></svg>,
+              },
+              {
+                name: 'SE Smart IPTV', desc: 'iOS · Android · macOS', bg: '#D97706',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L4.5 13H11L10 22l8.5-11H13L13 2z" fill="white" stroke="none"/></svg>,
+              },
+              {
+                name: 'Smart IPTV', desc: 'Samsung · LG Smart TV', bg: '#DC2626',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="13" rx="2" stroke="white"/><path d="M8 21h8M12 17v4"/><path d="M8.5 10a5 5 0 0 1 7 0M6 7.5a9 9 0 0 1 12 0" stroke="white" strokeWidth="1.5"/><circle cx="12" cy="13" r="1.5" fill="white" stroke="none"/></svg>,
+              },
+              {
+                name: 'VLC', desc: 'Windows · Mac · Linux', bg: '#F97316',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none"><path d="M12 3L21 19H3L12 3z" fill="white"/><path d="M9 13h6M8 16.5h8" stroke="#F97316" strokeWidth="1.5" strokeLinecap="round"/><path d="M12 3L21 19H3L12 3z" fill="none" stroke="rgba(0,0,0,0.15)" strokeWidth="0.5"/></svg>,
+              },
+              {
+                name: 'Kodi', desc: 'Alle Plattformen', bg: '#0EA5E9',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 5v14M6 12l6-7M6 12l6 7"/><circle cx="18" cy="18" r="2.5" fill="white" stroke="none"/></svg>,
+              },
+              {
+                name: 'IBO Player Pro', desc: 'iOS · Android · Smart TV', bg: '#4F46E5',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" stroke="white"/><polygon points="10,8 17,12 10,16" fill="white" stroke="none"/></svg>,
+              },
+              {
+                name: 'Hot Player', desc: 'Android · Smart TV', bg: '#EF4444',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none"><path d="M12 2C12 2 7 7 7 12.5a5 5 0 0 0 10 0C17 10 16 8 14.5 6.5 14 8.5 13 9.5 12 9.5 12 7 12 2 12 2z" fill="white"/><path d="M10 17.5a2 2 0 0 0 4 0" stroke="white" strokeWidth="1.5" fill="none"/></svg>,
+              },
+              {
+                name: 'BOB Player', desc: 'Android · Smart TV', bg: '#0891B2',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 4h5.5a3.5 3.5 0 0 1 0 7H6zM6 11h6a3.5 3.5 0 0 1 0 7H6z" stroke="white" fill="none"/></svg>,
+              },
+              {
+                name: 'TV Online', desc: 'Android · Smart TV', bg: '#7C3AED',
+                icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="6" width="20" height="13" rx="2" stroke="white"/><path d="M8 22h8M12 19v3"/><path d="M8.5 3.5L12 7l3.5-3.5" stroke="white" strokeWidth="1.5"/></svg>,
+              },
+            ] as { name: string; desc: string; bg: string; icon: React.ReactNode }[]).map((app) => (
               <div
                 key={app.name}
                 className="glass-card rounded-3xl p-6 flex flex-col items-center gap-3 hover:bg-white transition-all duration-500 group cursor-default"
               >
-                <img
-                  src={app.img}
-                  alt={app.name}
-                  className="w-14 h-14 rounded-2xl object-contain group-hover:scale-110 transition-transform shadow-xl flex-shrink-0"
-                />
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl flex-shrink-0"
+                  style={{ backgroundColor: app.bg }}
+                >
+                  {app.icon}
+                </div>
                 <div className="text-center">
                   <div className="text-xs font-black tracking-tight leading-tight" style={{ color: '#111111' }}>{app.name}</div>
                   <div className="text-[10px] font-medium mt-1" style={{ color: 'rgba(17,17,17,0.5)' }}>{app.desc}</div>

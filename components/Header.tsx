@@ -18,7 +18,6 @@ export const Header: React.FC<HeaderProps> = ({ isScrolled, bannerOffset = 0, li
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Sender', href: '/kanalen' },
-    { name: 'Sport', href: '/sportklaender' },
     { name: 'Vorteile', href: '/voordelen' },
     { name: 'Preise', href: '/prijzen' },
     { name: 'Box', href: '/kastje' },
@@ -34,8 +33,12 @@ export const Header: React.FC<HeaderProps> = ({ isScrolled, bannerOffset = 0, li
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-20 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
-            <div className="w-8 h-8 rounded-sm flex items-center justify-center" style={{ backgroundColor: '#1C1C1C' }}>
-              <div className="w-4 h-4 bg-white rotate-45"></div>
+            <div className="w-9 h-9 rounded-[10px] overflow-hidden shadow-lg flex-shrink-0">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                <rect width="40" height="40" fill="#111111"/>
+                <rect width="40" height="13.4" y="13.3" fill="#DD0000"/>
+                <rect width="40" height="13.4" y="26.6" fill="#FFCE00"/>
+              </svg>
             </div>
             <span className="text-xl font-extrabold tracking-tighter transition-colors duration-300" style={{ color: useLightText ? '#ffffff' : '#111111' }}>IPTVDeutschland</span>
           </Link>

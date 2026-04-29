@@ -138,7 +138,7 @@ export const Privacybeleid: React.FC = () => {
             <p>Für Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten können Sie uns kontaktieren:</p>
             <div className="mt-4 p-6 bg-gray-50 rounded-2xl border border-gray-100 space-y-2">
               <p><strong>IPTVDeutschland</strong></p>
-              <p>E-Mail: <a href="mailto:info@iptvnederland.digital" className="font-bold hover:underline" style={{ color: "#DD0000" }}>info@iptvnederland.digital</a></p>
+              <p>E-Mail: <a href="mailto:info@iptvdeutsch.digital" className="font-bold hover:underline" style={{ color: "#DD0000" }}>info@iptvdeutsch.digital</a></p>
               <p>Telefon: <a href="tel:+447449708976" className="font-bold hover:underline" style={{ color: "#DD0000" }}>+44 7449 708976</a></p>
               <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=447449708976&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="font-bold hover:underline" style={{ color: "#DD0000" }}>+44 7449 708976</a></p>
             </div>
